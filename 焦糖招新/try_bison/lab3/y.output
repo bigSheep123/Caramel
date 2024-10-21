@@ -1,0 +1,308 @@
+Grammar
+
+    0 $accept: prog $end
+
+    1 prog: /* empty */
+    2     | prog expr CR
+
+    3 expr: expr ADD term
+    4     | expr SUB term
+    5     | expr ADD ADD term
+    6     | term
+
+    7 term: term MUL MUL factor
+    8     | term MUL factor
+    9     | term DIV factor
+   10     | factor
+
+   11 factor: NUM
+   12       | SUB factor
+   13       | Y_LPAR expr Y_RPAR
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+ADD (258) 3 5
+SUB (259) 4 12
+MUL (260) 7 8
+DIV (261) 9
+CR (262) 2
+Y_LPAR (263) 13
+Y_RPAR (264) 13
+NUM (265) 11
+
+
+Nonterminals, with rules where they appear
+
+$accept (11)
+    on left: 0
+prog (12)
+    on left: 1 2, on right: 0 2
+expr (13)
+    on left: 3 4 5 6, on right: 2 3 4 5 13
+term (14)
+    on left: 7 8 9 10, on right: 3 4 5 6 7 8 9
+factor (15)
+    on left: 11 12 13, on right: 7 8 9 10 12
+
+
+State 0
+
+    0 $accept: . prog $end
+
+    $default  reduce using rule 1 (prog)
+
+    prog  go to state 1
+
+
+State 1
+
+    0 $accept: prog . $end
+    2 prog: prog . expr CR
+
+    $end    shift, and go to state 2
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    expr    go to state 6
+    term    go to state 7
+    factor  go to state 8
+
+
+State 2
+
+    0 $accept: prog $end .
+
+    $default  accept
+
+
+State 3
+
+   12 factor: SUB . factor
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    factor  go to state 9
+
+
+State 4
+
+   13 factor: Y_LPAR . expr Y_RPAR
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    expr    go to state 10
+    term    go to state 7
+    factor  go to state 8
+
+
+State 5
+
+   11 factor: NUM .
+
+    $default  reduce using rule 11 (factor)
+
+
+State 6
+
+    2 prog: prog expr . CR
+    3 expr: expr . ADD term
+    4     | expr . SUB term
+    5     | expr . ADD ADD term
+
+    ADD  shift, and go to state 11
+    SUB  shift, and go to state 12
+    CR   shift, and go to state 13
+
+
+State 7
+
+    6 expr: term .
+    7 term: term . MUL MUL factor
+    8     | term . MUL factor
+    9     | term . DIV factor
+
+    MUL  shift, and go to state 14
+    DIV  shift, and go to state 15
+
+    $default  reduce using rule 6 (expr)
+
+
+State 8
+
+   10 term: factor .
+
+    $default  reduce using rule 10 (term)
+
+
+State 9
+
+   12 factor: SUB factor .
+
+    $default  reduce using rule 12 (factor)
+
+
+State 10
+
+    3 expr: expr . ADD term
+    4     | expr . SUB term
+    5     | expr . ADD ADD term
+   13 factor: Y_LPAR expr . Y_RPAR
+
+    ADD     shift, and go to state 11
+    SUB     shift, and go to state 12
+    Y_RPAR  shift, and go to state 16
+
+
+State 11
+
+    3 expr: expr ADD . term
+    5     | expr ADD . ADD term
+
+    ADD     shift, and go to state 17
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    term    go to state 18
+    factor  go to state 8
+
+
+State 12
+
+    4 expr: expr SUB . term
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    term    go to state 19
+    factor  go to state 8
+
+
+State 13
+
+    2 prog: prog expr CR .
+
+    $default  reduce using rule 2 (prog)
+
+
+State 14
+
+    7 term: term MUL . MUL factor
+    8     | term MUL . factor
+
+    SUB     shift, and go to state 3
+    MUL     shift, and go to state 20
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    factor  go to state 21
+
+
+State 15
+
+    9 term: term DIV . factor
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    factor  go to state 22
+
+
+State 16
+
+   13 factor: Y_LPAR expr Y_RPAR .
+
+    $default  reduce using rule 13 (factor)
+
+
+State 17
+
+    5 expr: expr ADD ADD . term
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    term    go to state 23
+    factor  go to state 8
+
+
+State 18
+
+    3 expr: expr ADD term .
+    7 term: term . MUL MUL factor
+    8     | term . MUL factor
+    9     | term . DIV factor
+
+    MUL  shift, and go to state 14
+    DIV  shift, and go to state 15
+
+    $default  reduce using rule 3 (expr)
+
+
+State 19
+
+    4 expr: expr SUB term .
+    7 term: term . MUL MUL factor
+    8     | term . MUL factor
+    9     | term . DIV factor
+
+    MUL  shift, and go to state 14
+    DIV  shift, and go to state 15
+
+    $default  reduce using rule 4 (expr)
+
+
+State 20
+
+    7 term: term MUL MUL . factor
+
+    SUB     shift, and go to state 3
+    Y_LPAR  shift, and go to state 4
+    NUM     shift, and go to state 5
+
+    factor  go to state 24
+
+
+State 21
+
+    8 term: term MUL factor .
+
+    $default  reduce using rule 8 (term)
+
+
+State 22
+
+    9 term: term DIV factor .
+
+    $default  reduce using rule 9 (term)
+
+
+State 23
+
+    5 expr: expr ADD ADD term .
+    7 term: term . MUL MUL factor
+    8     | term . MUL factor
+    9     | term . DIV factor
+
+    MUL  shift, and go to state 14
+    DIV  shift, and go to state 15
+
+    $default  reduce using rule 5 (expr)
+
+
+State 24
+
+    7 term: term MUL MUL factor .
+
+    $default  reduce using rule 7 (term)
