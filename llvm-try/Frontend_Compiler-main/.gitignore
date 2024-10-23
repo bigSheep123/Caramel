@@ -1,0 +1,14 @@
+build
+.vscode/
+testcases/**/*.ll
+testcases/**/*.s
+testcases/**/*.o
+testcases/output
+BackendTest/
+uploadfolder
+testcases_output
+testcases_c
+.cache/clangd/index
+Testing
+./CMakeLists.txt
+./error.log

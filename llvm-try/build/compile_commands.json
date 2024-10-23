@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -Wno-unused-variable -g -std=gnu++17 -o CMakeFiles/SYSY-compiler.dir/main.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/main.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/main.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o yacc/CMakeFiles/Yacc.dir/parser.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/yacc/parser.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/yacc/parser.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o yacc/CMakeFiles/Yacc.dir/scanner.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/yacc/scanner.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/yacc/scanner.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/Analysis/CMakeFiles/Analysis.dir/dominant.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis/dominant.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis/dominant.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/ConstantProp.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/ConstantProp.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/ConstantProp.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/DCE.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/DCE.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/DCE.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/IDF.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/IDF.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/IDF.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/PromoteMemtoRegister.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/PromoteMemtoRegister.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/PromoteMemtoRegister.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/mem2reg.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/mem2reg.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/mem2reg.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/ir/Analysis -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o ir/opt/CMakeFiles/opt.dir/new_passManager.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/new_passManager.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/ir/opt/new_passManager.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/AST_NODE.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/AST_NODE.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/AST_NODE.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/BaseCFG.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/BaseCFG.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/BaseCFG.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/CFG.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/CFG.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/CFG.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/Trival.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/Trival.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/Trival.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/Type.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/Type.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/Type.cpp"
+},
+{
+  "directory": "/home/oslab/llvmlab/build",
+  "command": "/usr/bin/c++ -DLEVEL -DSYSY_ENABLE_BACKEND -DSYSY_ENABLE_MIDDLE_END -I/home/oslab/llvmlab/Frontend_Compiler-main/util -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/opt -I/home/oslab/llvmlab/Frontend_Compiler-main/include/ir/Analysis -I/home/oslab/llvmlab/Frontend_Compiler-main/include/lib -I/home/oslab/llvmlab/Frontend_Compiler-main/include/yacc -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -g -std=gnu++17 -o lib/CMakeFiles/Lib.dir/TypeTrans.cpp.o -c /home/oslab/llvmlab/Frontend_Compiler-main/lib/TypeTrans.cpp",
+  "file": "/home/oslab/llvmlab/Frontend_Compiler-main/lib/TypeTrans.cpp"
+}
+]
